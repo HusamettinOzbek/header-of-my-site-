@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400&display=swap');
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+  
+}
+/* Header start */
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 100%;
+}
+
+header nav .logo a{
+    text-decoration: none;
+    position: absolute;
+    width: 260px;
+    height: 72px;
+    left: 93.5px;
+    top: 79px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #000000;
+}
+header nav .logo-bot a{
+    /* UI-UX - CODE */
+    
+    
+        position: absolute;
+        width: 9,5em;
+        height: 1,4em;
+        left: 95px;
+        top: 115px;
+    
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 285;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+
+color: #000000;
+
+}
+nav ul  {
+    list-style: none;
+    display: flex;
+    column-gap:32px ; 
+    margin-top: 102.5px;
+   
+}
+nav ul a{
+    text-decoration: none;
+    align-items: center;
+    color: #000000;
+    
+   
+}
+
+nav ul li a {
+    
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        
+    
+    }
+    nav ul li a:hover {
+    
+      color: rgba(0, 0, 248, 0.915);
+      transition: .25s ease;
+    
+    }
+    
+    header nav div button {
+
+  
+    }
+
+
+/* header end */
+/*  Responsive start */
+
+@media(max-width:800px ){
+    .container{
+        width: 100%
+        padding-left 12px
+    }
+    nav ul li a {
+        display: none;
+    }
+}
+@media(min-width:800px ){
+    header nav div button{
+        display: none;
+    }
+    
+}
+/*  Responsive end */
